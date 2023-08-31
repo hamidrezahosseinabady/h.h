@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      section {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        /* background-color: beige; */
+      }
+      header {
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        /* background-color: aqua; */
+      }
+      .dark {
+        background-color: #222;
+        color: #e6e6e6;
+      }
+      /*
+      
+      body{
+		padding:10% 3% 10% 3%;
+		text-align:center;
+		}
+		img{
+			height:140px;
+				width:140px;
+		}
+		h1{
+		color: #32a852;
+		}
+		.mode {
+			float:right;
+		}
+		.change {
+			cursor: pointer;
+			border: 1px solid #555;
+			border-radius: 40%;
+			width: 20px;
+			text-align: center;
+			padding: 5px;
+			margin-left: 8px;
+		}
+		.dark{
+			background-color: #222;
+			color: #e6e6e6;
+		}
+      
+      
+      */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="myh1">Light mode</h1>
+      <button class="change">Click me</button>
+    </header>
+    <section>
+      <h3>dark and light mode</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus
+        recusandae accusamus, error esse deleniti quibusdam, soluta iusto quasi
+        fugiat corporis pariatur veniam vel non molestiae rem. Deleniti, vero
+        illo. Praesentium, aliquid doloremque? At sequi hic quisquam
+        reprehenderit officiis impedit ipsam aperiam! Possimus mollitia,
+        <br>
+        aperiam, impedit at quisquam voluptates quis placeat corrupti obcaecati
+        praesentium architecto voluptatum odit harum ea hic? Ducimus
+        exercitationem dicta, voluptas, autem quisquam molestiae ipsum a quos
+        culpa obcaecati eum officiis eligendi aut? Quisquam laudantium,
+        molestias sed dignissimos odio eaque iure animi vitae numquam nihil
+        consectetur mollitia. Rem repudiandae libero expedita, sunt cupiditate
+        cum veritatis, quas, earum in atque nam sit dolorum laboriosam
+        exercitationem accusantium! Esse quisquam fuga perspiciatis alias
+        doloribus magnam fugiat sed aperiam unde consequuntur. Alias nobis
+        fugiat hic illum saepe quia nihil expedita, quam repudiandae sunt
+        corporis quisquam sit similique dolores assumenda enim et, officia
+        consequatur nulla praesentium excepturi quod. Eaque sunt quos dicta.
+        Minus voluptatem nostrum ea error consectetur aspernatur, modi impedit
+        pariatur velit quidem sequi similique atque aliquid ipsam! Dignissimos,
+        et ipsa laudantium quod pariatur voluptatibus dolores facere accusamus,
+        iusto perspiciatis vitae. In quae ea rerum dolore harum, ratione
+        necessitatibus, aspernatur odio possimus delectus corrupti doloribus,
+        veritatis alias impedit. Cumque rem error labore temporibus fuga
+        officiis ex ab, nostrum, explicabo inventore fugit! Sed exercitationem
+        repellat, quam veniam quibusdam perferendis quis doloribus, dicta eaque
+        id eos architecto cum similique officia est, nesciunt consequuntur
+        ratione rem? Quidem id earum architecto sint perferendis suscipit alias.
+        Quam, pariatur quia aliquam ex ab hic aliquid, enim reprehenderit
+        cupiditate, alias eos laudantium ipsum voluptas commodi atque? Iusto
+        exercitationem, cumque eius eligendi similique veniam rem ea suscipit
+        asperiores consequatur. Alias reprehenderit, exercitationem facere
+        excepturi ex nemo tempore, at asperiores soluta voluptates, sunt est
+        ducimus dolorum fuga officia pariatur accusantium rerum id nisi
+        perspiciatis labore natus repellendus voluptatum? Ipsam, distinctio.
+        Eius ea perferendis quidem adipisci earum, repellat minus repellendus in
+        facilis, accusantium amet ducimus animi at. Dolorem sit numquam modi,
+        eos cum facilis similique reiciendis minus suscipit laboriosam quia
+        reprehenderit. Harum non error quasi aliquid consequatur ut aperiam
+        aspernatur cupiditate repudiandae at, recusandae ipsum expedita dolor
+        beatae cumque officia inventore velit? Ratione enim quod earum, natus
+        nesciunt eaque aperiam pariatur. Non totam id nihil illum! Dolorum totam
+        dolorem a at cupiditate velit officia debitis excepturi. Animi
+        blanditiis delectus quos,
+      </p>
+    </section>
+    <script>
+      $(".change").on("click", function () {
+        if ($("body").hasClass("dark")) {
+          $("body").removeClass("dark");
+          $(".myh1").text("Light mode");
+        } else {
+          $("body").addClass("dark");
+          $(".myh1").text("Dark mode");
+          
+        }
+      });
+    </script>
+  </body>
+</html>
